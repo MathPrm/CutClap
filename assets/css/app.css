@@ -12,6 +12,29 @@ body {
 
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background:#171717;
+}
+::-webkit-scrollbar-thumb{
+    background:#313030;
+    border-radius: 10px;
+}
+
+svg {
+    stroke: #fefefe;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+#burger {
+    display:none;
+}
+
 /* Header */
 
 header{
@@ -309,6 +332,11 @@ li {
     bottom: -16%;
 }
 
+#photo2 img {
+    position: absolute;
+    bottom: -33%;
+}
+
 #photo10 img {
     position: absolute;
     bottom: -16%;
@@ -337,4 +365,70 @@ li {
 
 i {
     font-size: 2em;
+}
+
+/* Version Smartphone */
+
+@media screen and (max-width: 480px){
+    
+    /* Header */
+
+    nav {
+        display: none;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin: 8% 0 0 12%;
+    }
+
+    #burger {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        top: 5px;
+        right: 5px;
+    }
+
+    /* Accueil */
+
+    #accueil h1 {
+        font-size: 1.8em;
+        margin: 4% auto;
+    }
+
+    #accueil h2{
+        font-size: 1.3em;
+        margin: 4% 3%;
+    }
+
+    #container-video {
+        flex-direction: column;
+    }
+
+    #container-video-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #accueil iframe {
+        width: 320px;
+        height: 178px;
+    }
+
+    #accueil h3 {
+        font-size: 1.1em;
+    }
+
+    #container-infos {
+        width:80%;
+    }
+
+    #container-description {
+        width: 100%;
+    }
+    
+
 }
