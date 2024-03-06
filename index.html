@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cut Clap | la chaîne youtube sur un site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favIcon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favIcon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favIcon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
   <header>
@@ -51,34 +59,31 @@
     <h2>Notre Concept</h2>
     <div id="container-a-propos">
         <div id="a-propos-text">
-            <p>
-                Bienvenue !
-            </p>
-            <p>Si tu te trouves parmis nous aujourd'hui c'est sûrement parce que tu es toi aussi un passionné de séries qui développe un intérêt pour la réalisation cinématographique. Ici, on te propose de redécouvrir tes scènes cultes favorites en t'apprenant comment reproduire chaque aspect de ces dernières, le tout avec un tout petit budget.
+            <p>Bienvenue !</p>
+            <p>Si tu te trouves parmi nous aujourd'hui c'est sûrement parce que tu es toi aussi un passionné de séries qui développe un intérêt pour la réalisation cinématographique. Ici, on te propose de redécouvrir tes scènes cultes favorites en t'apprenant comment reproduire chaque aspect de ces dernières, le tout avec un tout petit budget.
             </p>
             <p>Ça t'intéresse? Alors n'hésite surtout pas à nous rejoindre grâce à ce lien qui t'emmène directement sur la chaîne !
             </p>
         </div>
         <img src="./assets/img/baniere-cut-clap.svg" alt="banière de la chaîne youtube cut clap" width="auto" height="225px">
     </div>
-    <a href="" id="join-us">Rejoins-nous !</a>
 </section>
 
 <section id="videos">
     <h2>Nos vidéos</h2>
     <div id="video-display">
-        <div class="container-video">
+        <div class="container-video" id="video1" data-aos="zoom-in">
             <img src="https://cdn-images-1.medium.com/max/2000/1*HFAEJvVOq4AwFuBivNu_OQ.png" alt="miniature de la vidéo 1">
             <h3>minia 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus et ad asperiores cupiditate quod! Sit atque modi illum molestias officia ab, assumenda obcaecati aliquam numquam optio explicabo dolore labore debitis.</p>
         </div>
-        <div class="container-video">
+        <div class="container-video" data-aos="zoom-in" id="video2">
             <img src="https://blog.webix.com/wp-content/uploads/2017/06/20170621-CSS-Grid-Layout-710x355-tiny.png"
                 alt="miniature de la vidéo 2">
             <h3>minia 2</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, ut iure optio pariatur blanditiis doloremque mollitia architecto aspernatur ullam eaque neque explicabo laudantium ex officia animi veniam recusandae, labore perferendis.</p>
         </div>
-        <div class="container-video">
+        <div class="container-video" data-aos="zoom-in" id="video3">
             <img src="https://www.graycelltech.com/wp-content/uploads/2015/06/GCT-HTML5.jpg" alt="miniature de la vidéo 3">
             <h3>minia 3</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, .</p>
@@ -158,18 +163,18 @@
 <footer>
     <ul>
         <li>
-            <i class="fa-brands fa-square-twitter" style="color: #cc0000;"></i>
+            <i class="fa-brands fa-square-twitter" style="color: rgb(23, 23, 23);"></i>
         </li>
         <li>
-            <i class="fa-brands fa-square-instagram" style="color: #cc0000;"></i>
+            <i class="fa-brands fa-square-instagram" style="color: rgb(23, 23, 23);"></i>
         </li>
         <li>
-            <i class="fa-brands fa-facebook" style="color: #cc0000;"></i>
+            <i class="fa-brands fa-facebook" style="color: rgb(23, 23, 23);"></i>
         </li>
     </ul>
-    <small>CutClap © 2024 | Tous droits réservés ®</small>
-    <a href="">mentions légales</a>
+        <small>CutClap © 2024 | Tous droits réservés ® | <a href="">mentions légales</a></small>
 </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>

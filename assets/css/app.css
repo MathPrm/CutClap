@@ -237,6 +237,18 @@ li {
     border-top-right-radius: 12px;
 }
 
+#video1 {
+    transition-delay: 250ms;
+}
+
+#video2 {
+    transition-delay: 500ms;
+}
+
+#video3 {
+    transition-delay: 750ms;
+}
+
 /* Section Équipe */
 
 #equipe {
@@ -305,16 +317,24 @@ li {
 /* Footer */
 
 footer {
-    background: #313030;
+    background: #CC0000;
     height: 100px;
     margin-top: 10%;
-    text-align:center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-ul {
+footer ul {
     display: flex;
+    width: 30%;
 }
 
 li {
     list-style: none;
+}
+
+i {
+    font-size: 2em;
 }
