@@ -393,6 +393,10 @@ i {
 
     /* Accueil */
 
+    #accueil {
+        margin:0;
+    }
+
     #accueil h1 {
         font-size: 1.8em;
         margin: 4% auto;
@@ -414,12 +418,15 @@ i {
     }
 
     #accueil iframe {
-        width: 320px;
-        height: 178px;
+        width: 100vw;
+        height: 200px;
+        margin-top:2%;
+        margin-bottom:4%;
     }
 
     #accueil h3 {
-        font-size: 1.1em;
+        font-size: 1.25em;
+        margin-left:0;
     }
 
     #container-infos {
@@ -428,6 +435,27 @@ i {
 
     #container-description {
         width: 100%;
+    }
+
+    /* A propos */
+
+    #a-propos h2 {
+        font-size: 1.7em;
+    }
+
+    #container-a-propos {
+        flex-direction: column-reverse;
+    }
+
+    #a-propos img {
+        width: 100vw;
+        height:auto;
+    }
+
+    /* Vidéos */
+
+    #video-display {
+        flex-direction: column;
     }
     
 
