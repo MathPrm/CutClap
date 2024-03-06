@@ -75,10 +75,11 @@ li {
 #accueil h1 {
     font-size: 2.5em;
     text-align: center;
+    margin-top:1.5%;
 }
 
 #accueil h2 {
-    margin: 2% 0 1% 0;
+    margin: 3% 0 1% 0;
 }
 
 #accueil iframe {
@@ -155,7 +156,13 @@ li {
 #a-propos h2 {
     font-size: 2.2em;
     text-align: center;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+}
+
+#container-a-propos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #a-propos p {
@@ -163,6 +170,10 @@ li {
     font-size: 1.25em;
     font-weight: normal;
     padding: 0 5%;
+}
+
+#a-propos img {
+    filter: brightness(125%);
 }
 
 #a-propos a {
@@ -233,27 +244,62 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 4%;
+    margin: 4% 0 0 0;
 }
 
 #equipe h2 {
     font-size: 2.2em;
     text-align: center;
-    margin-bottom: 3%;
+    margin: 0 0 3% 0;
 }
 
 #container-photos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5%;
-    width:80%;
+    grid-template-columns: repeat(5, 225px);
+    gap: 25% 5%;
+    width:93%;
+    margin: 0 0 5% 0;
 }
 
 .photo {
     background: #313030;
-    height: 200px;
-    width: 200px;
+    height: 225px;
+    width: 225px;
+    overflow: hidden;
+    cursor: pointer;
     border-radius: 12px;
+    position: relative;
+    z-index:0;
+}
+
+.equipe-role {
+    background: #CC0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.equipe-role h3 {
+    font-size: 1.1em;
+}
+
+.equipe-role p {
+    font-weight: normal;
+}
+
+#photo1 img {
+    position: absolute;
+    bottom: -16%;
+}
+
+#photo10 img {
+    position: absolute;
+    bottom: -16%;
 }
 
 /* Footer */
