@@ -311,7 +311,7 @@ li {
     display: grid;
     grid-template-columns: repeat(4, 225px);
     grid-template-rows: repeat(3, 225px);
-    gap: 25% 5%;
+    gap: 10% 5%;
     width:70%;
     margin: 0 0 5% 0;
 }
@@ -361,6 +361,11 @@ li {
     bottom: -33%;
 }
 
+#photo5 img {
+    position: absolute;
+    bottom: -17%;
+}
+
 #photo7 img {
     position: absolute;
     bottom: -19%;
@@ -369,6 +374,16 @@ li {
 #photo10 img {
     position: absolute;
     bottom: -16%;
+}
+
+#photo-9 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#photo-10 {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 #equipe-mobile {
