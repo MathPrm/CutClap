@@ -413,8 +413,8 @@ i {
         display: block;
         position: fixed;
         z-index: 3;
-        top: 5px;
-        right: 5px;
+        top: 10px;
+        right: 10px;
     }
 
     /* Accueil */
@@ -448,10 +448,11 @@ i {
     }
 
     #accueil iframe {
-        width: 80vw;
+        width: 100vw;
         height: 200px;
         margin-top:2%;
         margin-bottom:4%;
+        margin-left:-1%;
     }
 
     #accueil h3 {
