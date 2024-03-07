@@ -274,6 +274,7 @@ li {
 
 #shorts {
     display: flex;
+    gap:260px;
 }
 
 .shorts {
@@ -535,6 +536,12 @@ footer small a {
         padding: 0;
     }
 
+    #shorts {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
     /* Equipe */
 
     #equipe {
@@ -542,6 +549,67 @@ footer small a {
     }
 
     #equipe-mobile {
+        display:block;
+    }
+
+    .mySwiper .ps {
+        background-image: url(../img/carps.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    
+    .ps-content {
+        color: #fff;
+    }
+    
+    
+    
+    .mySwiper .ai {
+        background-image: url(../img/luz.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        cursor: pointer;
+    
+    }
+    
+    .ai-content {
+        color: #100721;
+    }
+    
+    .mySwiper .id {
+        background-image: url(../img/print.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #520A23;
+        cursor: pointer;
+    
+    }
+    
+    .id-content {
+        color: #46006E;
+    }
+    
+    .mySwiper .pr {
+        background-image: url(../img/video.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    
+    .pr-content {
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    /* #equipe-mobile {
         display: block;
     }
     
@@ -624,6 +692,37 @@ footer small a {
     }
     .is-hidden{
     display:none;
+    } */
+
+}
+
+/* format macbook air */
+
+@media screen and (max-width:1300px) {
+    *{
+        border: 1px solid orange;
+    }
+    /* Equipe */
+
+    #container-photos {
+        display: grid;
+        grid-template-columns: repeat(4, 225px);
+        grid-template-rows: repeat(3, 225px);
+        margin: auto;
+        width: 83%;
     }
 
+    #photo9 {
+        grid-column-start: 10;
+    }
+
+    #photo10 {
+        grid-column-start: 11;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 32%;
+    }
 }
