@@ -698,7 +698,7 @@ footer small a {
 
 /* format macbook air */
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1500px) {
     *{
         border: 1px solid orange;
     }
