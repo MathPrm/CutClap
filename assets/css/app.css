@@ -309,9 +309,10 @@ li {
 
 #container-photos {
     display: grid;
-    grid-template-columns: repeat(5, 225px);
+    grid-template-columns: repeat(4, 225px);
+    grid-template-rows: repeat(3, 225px);
     gap: 25% 5%;
-    width:93%;
+    width:70%;
     margin: 0 0 5% 0;
 }
 
@@ -696,33 +697,3 @@ footer small a {
 
 }
 
-/* format macbook air */
-
-@media screen and (max-width:1700px) {
-    *{
-        border: 1px solid orange;
-    }
-    /* Equipe */
-
-    #container-photos {
-        display: grid;
-        grid-template-columns: repeat(4, 225px);
-        grid-template-rows: repeat(3, 225px);
-        margin: auto;
-        width: 83%;
-    }
-
-    #photo9 {
-        grid-column-start: 10;
-    }
-
-    #photo10 {
-        grid-column-start: 11;
-    }
-
-    /* Footer */
-
-    footer {
-        margin-top: 32%;
-    }
-}
