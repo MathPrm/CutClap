@@ -319,6 +319,10 @@ li {
     bottom: 0;
 }
 
+#container-photos a {
+    color: #fefefefe;
+}
+
 .equipe-role h3 {
     font-size: 1.1em;
 }
@@ -335,6 +339,11 @@ li {
 #photo2 img {
     position: absolute;
     bottom: -33%;
+}
+
+#photo7 img {
+    position: absolute;
+    bottom: -19%;
 }
 
 #photo10 img {
@@ -369,6 +378,10 @@ li {
 
 i {
     font-size: 2em;
+}
+
+footer small a {
+    color: #fefefe;
 }
 
 /* mentions légales */
@@ -478,7 +491,7 @@ i {
     }
 
     #container-description {
-        width: 98vw;
+        width: 95vw;
     }
 
     /* A propos */
