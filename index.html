@@ -15,12 +15,14 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
+
 <body>
+
   <header>
         <a href="#accueil">
             <img id="logo" src="./assets/img/logodef.webp" alt="logo" width="100px" height="100px">
         </a>
-        <nav>
+        <nav id="menu">
             <ul>
                 <li><a href="#accueil" class="menu-item">Accueil</a></li>
                 <li><a href="#a-propos" class="menu-item">À propos</a></li>
@@ -32,9 +34,9 @@
 
     <main>
         <svg id="burger" height="50px" width="50px" viewbox="0 0 100 100">
-            <line x1="15" y1="30" x2="85" y2="30"></line>
-            <line x1="15" y1="50" x2="85" y2="50"></line>
-            <line x1="15" y1="70" x2="85" y2="70"></line>
+            <line x1="15" y1="30" x2="85" y2="30" class="burger-line"></line>
+            <line x1="15" y1="50" x2="85" y2="50" class="burger-line"></line>
+            <line x1="15" y1="70" x2="85" y2="70" class="burger-line"></line>
         </svg>
         <section id="accueil">
             <h1>Cut Clap, apprendre à réaliser des tournages à moindre budget !</h1>
@@ -56,7 +58,8 @@
                     </div>
                 </div>
                 <div id="container-description">
-                    <p>Ici s'affichera la description youtube de la vidéo.</p>
+                    <h3>Les petits mots de la communauté</h3>
+                    <img src="./assets/img/commentaires.webp" alt="Commentaires de la communauté">
                 </div>
             </div>
         </section>
@@ -197,104 +200,89 @@
             <div></div>
         </div>
     </section>
-    <!-- <section id="equipe-mobile">
-        <div class="wiper">
-            <button class="wiper-button wiper-button__right">
-              <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="left" />
-            </button>
-            <div class="wiper-wrapper">
-              <ul class="wiper-track">
-                <li class="wiper-item active-swipe">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/antoine-photo.webp"
-                    alt="photo d'Antoine"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/doryan-photo.webp"
-                    alt="Photo de Doryan"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="https://images.pexels.com/photos/17024197/pexels-photo-17024197/free-photo-of-a-pink-anemone-on-a-white-background.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-                    alt="Photo de Louis"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/lesly-photo.webp"
-                    alt="Photo de Lesly"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="https://images.pexels.com/photos/17617625/pexels-photo-17617625/free-photo-of-pink-chrysanthemum-flowers.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
-                    alt="Photo de Nathan"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/firdaws-photo.webp"
-                    alt="Photo de Firdaous"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/alex-photo.webp"
-                    alt="Photo d'Alexandre"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/regis-photo.webp"
-                    alt="Photo de Regis"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/math-photo.webp"
-                    alt="Photo de Mathilde"
-                  />
-                </li>
-                <li class="wiper-item">
-                  <img
-                    class="wiper__image"
-                    src="./assets/img/jd-photo.webp"
-                    alt="Photo de Jean-David"
-                  />
-                </li>
-              </ul>
-            </div>
-            <button class="wiper-button wiper-button__left">
-              <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="right" />
-            </button>
-          </div>
-        </body>      
-    </section> -->
+
     <section id="equipe-mobile">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide ps"><a href="photoshop.html" class="ps-content">Photoshop</a></div>
-                <div class="swiper-slide ai"><a href="illustration.html" class="ai-content">Illustrator</a></div>
-                <div class="swiper-slide id"><a href="indd.html" class="id-content">Indesing</a></div>
-                <div class="swiper-slide pr"><a href="video.html" class="pr-content">Première pro</a></div>
+    <div class="slider">
+        <div class="slide">
+            <img
+                src="./assets/img/antoine-photo.webp"
+                alt="Photo Antoine"
+            />
+            <div class="equipe-role">
+                <h3>Vuong Antoine</h3>
+                <p>Chef de projet</p>
             </div>
-    
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
+        <div class="slide">
+            <img
+            src="./assets/img/doryan-photo.webp"
+            alt="Photo Doryan"
+            />
+            <div class="equipe-role">
+                <h3>Rossignol Doryan</h3>
+                <p>Chef de projet</p>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/louis-photo.webp" alt="Photo de Louis" />
+            <div class="equipe-role">
+                <h3>Binisti Louis</h3>
+                <p>Monteur</p>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/lesly-photo-2.webp" alt="Photo de Lesly" />
+            <div class="equipe-role">
+                <h3>Lambeau Lesly</h3>
+                <p>Graphiste</p>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/nathan-photo.webp" alt="Photo de Nathan" />
+            <div class="equipe-role">
+                <h3>Renault Nathan</h3>
+                <p>Scénario</p>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/firdaws-photo.webp" alt="Photo de Firdaous" />
+            <div class="equipe-role">
+                <h3>Aboumouslim Firdaous</h3>
+                <p>Graphiste</p>
+            </div> 
+        </div>
+        <div class="slide">
+          <img src="./assets/img/alex-photo.webp" alt="Photo d'Alexandre" />
+            <div class="equipe-role">
+                <h3>Ouady Alexandre</h3>
+                <p>Benchmark</p>
+            </div> 
+        </div>
+        <div class="slide">
+          <img src="./assets/img/regis-photo.webp" alt="Photo de Regis" />
+            <div class="equipe-role">
+                <h3>Abou’ou Regis Levy</h3>
+                <p>Benchmark</p>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/math-photo.webp" alt="Photo de Mathilde" />
+            <div class="equipe-role">
+                <h3>Primot Mathilde</h3>
+                <p>Développement Web</p>
+            </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/jd-photo.webp" alt="Photo de Jean-David" />
+            <div class="equipe-role">
+                <h3>Zamblezie Jean-David</h3>
+                <p>Développement web</p>
+            </div>
+        </div>
+        <button class="btn btn-next"></button>
+        <button class="btn btn-prev"></button>
+      </div>
+    </body>
     </section>
 </main>
 <footer>

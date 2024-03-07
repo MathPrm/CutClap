@@ -3,61 +3,62 @@
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
 
-    // const wiperTrack = document.querySelector(".wiper-track");
-    // const wipes = Array.from(wiperTrack.children);
-    // const wipePrevBtn = document.querySelector(".wiper-button__right");
-    // const wipeNextBtn = document.querySelector(".wiper-button__left");
-    // const wipeWidth = wipes[0].getBoundingClientRect().width;
+    // Select all slides
+    const slides = document.querySelectorAll(".slide");
 
-    // const arrowsBehaviour = (wipePrevBtn, wipeNextBtn, index) => {
-    // if (index === 0) {
-    //     wipePrevBtn.classList.add("is-hidden");
-    //     wipeNextBtn.classList.remove("is-hidden");
-    // } else if (index === wipes.length-1) {
-    //     wipePrevBtn.classList.remove("is-hidden");
-    //     wipeNextBtn.classList.add("is-hidden");
-    // } else {
-    //     wipePrevBtn.classList.remove("is-hidden");
-    //     wipeNextBtn.classList.remove("is-hidden");
-    // }
-    // };
+    // loop through slides and set each slides translateX property to index * 100% 
+    slides.forEach((slide, indx) => {
+      slide.style.transform = `translateX(${indx * 100}%)`;
+    });
 
-    // const wipeSlide = (wiperTrack, activeSlide, nextSlide, targetIndex) => {
-    // wiperTrack.style.transform =
-    //     "translateX(-" + (wipeWidth + 24) * (targetIndex - 1) + "px)";
-    // activeSlide.classList.remove("active-swipe");
-    // activeSlide.style.transform = "scale(1)";
-    // nextSlide.classList.add("active-swipe");
-    // nextSlide.style.transform = "scale(1.1)";
-    // };
+    // select next slide button
+    const nextSlide = document.querySelector(".btn-next");
 
-    // wipeNextBtn.addEventListener("click", (e) => {
-    // const activeSlide = wiperTrack.querySelector(".active-swipe");
-    // const nextSlide = activeSlide.nextElementSibling;
-    // const targetIndex = wipes.findIndex((slide) => slide === nextSlide);
-    // wipeSlide(wiperTrack, activeSlide, nextSlide, targetIndex);
-    // arrowsBehaviour(wipePrevBtn, wipeNextBtn, targetIndex);
-    // });
-    // wipePrevBtn.addEventListener("click", (e) => {
-    // const activeSlide = wiperTrack.querySelector(".active-swipe");
-    // const nextSlide = activeSlide.previousElementSibling;
-    // const targetIndex = wipes.findIndex((slide) => slide === nextSlide);
-    // wipeSlide(wiperTrack, activeSlide, nextSlide, targetIndex);
-    // arrowsBehaviour(wipePrevBtn, wipeNextBtn, targetIndex);
-    // });
+    // current slide counter
+    let curSlide = 0;
+    // maximum number of slides
+    let maxSlide = slides.length - 1;
 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+    // add event listener and navigation functionality
+    nextSlide.addEventListener("click", function () {
+      // check if current slide is the last and reset current slide
+      if (curSlide === maxSlide) {
+        curSlide = 0;
+      } else {
+        curSlide++;
+      }
+
+    //   move slide by -100%
+      slides.forEach((slide, indx) => {
+        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
       });
+
+      // select prev slide button
+      const prevSlide = document.querySelector(".btn-prev");
+
+      // add event listener and navigation functionality
+      prevSlide.addEventListener("click", function () {
+        // check if current slide is the first and reset current slide to last
+        if (curSlide === 0) {
+          curSlide = maxSlide;
+        } else {
+          curSlide--;
+        }
+
+        //   move slide by 100%
+        slides.forEach((slide, indx) => {
+          slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+        });
+      });
+
+      //burger
+      let burger = document.querySelector('#burger');
+      let menu = document.querySelector('#menu');
+
+      burger.addEventListener('click', () => {
+          menu.classList.toggle('active');
+      });
+
+});
 
 })
