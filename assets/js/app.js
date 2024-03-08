@@ -1,4 +1,4 @@
-'use strict';
+"use strict"
 
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init();
@@ -52,11 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       //burger
-      let burger = document.querySelector('#burger');
-      let menu = document.querySelector('#menu');
+      let burger = document.getElementById('burger');
+      let menu = document.getElementById('menu');
+      let increment = 0;
 
       burger.addEventListener('click', () => {
-          menu.classList.toggle('active');
+        if(increment %2 === 0) {
+          menu.classList.add('active');
+        } else {
+          menu.classList.remove('active');
+        }
+        increment++;
       });
 
 });

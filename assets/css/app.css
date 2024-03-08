@@ -174,6 +174,7 @@ li {
 
 #container-description p {
     font-weight: normal;
+    color: #fefefe;
 }
 
 /* A propos */
@@ -444,10 +445,6 @@ footer small a {
 /* Version Smartphone */
 
 @media screen and (max-width: 480px){
-
-    * {
-        border: 1px solid orange;
-    }
     
     /* Header */
 
